@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="src\keywords.h" />
+    <ClInclude Include="src\lexer\lexer.h">
+      <Filter>lexer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\token\token.h">
+      <Filter>token</Filter>
+    </ClInclude>
+    <ClInclude Include="src\token_types.h">
+      <Filter>token</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\lexer\lexer.cpp">
+      <Filter>lexer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\token\token.cpp">
+      <Filter>token</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="lexer">
+      <UniqueIdentifier>{e1b80504-2ae5-420b-8566-78c657800419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="token">
+      <UniqueIdentifier>{a0b63db7-2c92-4ec9-bcc2-05f46d9b5a55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

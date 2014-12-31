@@ -1,18 +1,23 @@
 #ifndef TOKEN_HEADER_GUARD
 #define TOKEN_HEADER_GUARD
 
+#include <iostream>
+
+using namespace std;
+
 class Token{
 private:
     int type;
-    String value;
+    string value;
 
 public:
-    token(int type, String value) : type(type), value(value) {}
+	Token(int type, string value);
+	~Token();
 
     /* Getters */
     int getType();
 
-    String getValue();
+    string getValue();
 };
 
 #endif

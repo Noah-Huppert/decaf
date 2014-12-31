@@ -1,11 +1,14 @@
 #include "token.h";
 
-class Token{
-    int Token::getType() {
-        return type;
-    }
+int Token::getType(){
+	return type;
+}
 
-    String Token::getValue() {
-        return value;
-    }
-};
+string Token::getValue(){
+	return value;
+}
+
+Token::~Token(){
+	delete &type;
+	delete &value;
+}

@@ -1,33 +1,31 @@
-#include "<iostream>"
+#include <iostream>
 #include "lexer.h"
 
-class Lexer{
-    std::vector<Token> Lexer::getTokens(String data){
-        std::vector<String> keywords = getKeywords(data);
+using namespace std;
 
-        std::cout << keywords;
-    }
+vector<Token> Lexer::getTokens(string data){
+	vector<string> keywords = this.getKeywords(data);
+}
 
-    std::vector<String> Lexer::getKeywords(String data){
-        std::vector<String> keywords;
+vector<string> Lexer::getKeywords(string data){
+	vector<string> keywords;
 
-        String currentKeyword = "";
+	string currentKeyword = "";
 
-        for(int i = 0; i < data.length(); i++){
-            String c = data[i];
+    for(int i = 0; i < data.length(); i++){
+		char c = data[i];
 
-            if(c != " "){
-                currentKeyword += c;
-            } else{
-                keywords.push_back(currentKeyword);
-                currentKeyword = "";
-            }
+        if(c != ' '){
+            currentKeyword += c;
+        } else{
+            keywords.push_back(currentKeyword);
+            currentKeyword = "";
         }
-
-        return keywords;
     }
 
-    Token Lexer::getTokenFromKeyword(String keyword){
+    return keywords;
+}
 
-    }
-};
+Token Lexer::getTokenFromKeyword(string keyword){
+
+}
